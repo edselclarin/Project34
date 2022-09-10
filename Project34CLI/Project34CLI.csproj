@@ -55,6 +55,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Connected Services\Project34WebService\Project34CLI.Project34WebService.AboutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\Project34WebService\Project34CLI.Project34WebService.GetUsersResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -62,9 +65,6 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\Project34WebService\Project34CLI.Project34WebService.GreetUserResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\Project34WebService\Project34CLI.Project34WebService.HelloWorldResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\Project34WebService\Project34CLI.Project34WebService.User.datasource">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="530d68d8-99f9-4923-aa38-a5ec8c97b303" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="530d68d8-99f9-4923-aa38-a5ec8c97b303" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,8 +22,8 @@
     <MetadataSource Address="https://localhost:44322/Project34WebService.asmx" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Project34WebService.wsdl" MetadataType="Wsdl" ID="ecde4373-1a03-434c-9c39-ff770ba37101" SourceId="1" SourceUrl="https://localhost:44322/Project34WebService.asmx?wsdl" />
     <MetadataFile FileName="Project34WebService.disco" MetadataType="Disco" ID="55bedc05-2fcb-4495-9a96-70fcd7d254ae" SourceId="1" SourceUrl="https://localhost:44322/Project34WebService.asmx?disco" />
+    <MetadataFile FileName="Project34WebService.wsdl" MetadataType="Wsdl" ID="ecde4373-1a03-434c-9c39-ff770ba37101" SourceId="1" SourceUrl="https://localhost:44322/Project34WebService.asmx?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

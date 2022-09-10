@@ -78,12 +78,12 @@ namespace Project34CLI.Project34WebService {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="Project34WebService.Project34WebServiceSoap")]
     public interface Project34WebServiceSoap {
         
-        // CODEGEN: Generating message contract since element name HelloWorldResult from namespace http://tempuri.org/ is not marked nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/HelloWorld", ReplyAction="*")]
-        Project34CLI.Project34WebService.HelloWorldResponse HelloWorld(Project34CLI.Project34WebService.HelloWorldRequest request);
+        // CODEGEN: Generating message contract since element name AboutResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/About", ReplyAction="*")]
+        Project34CLI.Project34WebService.AboutResponse About(Project34CLI.Project34WebService.AboutRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/HelloWorld", ReplyAction="*")]
-        System.Threading.Tasks.Task<Project34CLI.Project34WebService.HelloWorldResponse> HelloWorldAsync(Project34CLI.Project34WebService.HelloWorldRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/About", ReplyAction="*")]
+        System.Threading.Tasks.Task<Project34CLI.Project34WebService.AboutResponse> AboutAsync(Project34CLI.Project34WebService.AboutRequest request);
         
         // CODEGEN: Generating message contract since element name name from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Greeting", ReplyAction="*")]
@@ -117,15 +117,15 @@ namespace Project34CLI.Project34WebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class HelloWorldRequest {
+    public partial class AboutRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="HelloWorld", Namespace="http://tempuri.org/", Order=0)]
-        public Project34CLI.Project34WebService.HelloWorldRequestBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="About", Namespace="http://tempuri.org/", Order=0)]
+        public Project34CLI.Project34WebService.AboutRequestBody Body;
         
-        public HelloWorldRequest() {
+        public AboutRequest() {
         }
         
-        public HelloWorldRequest(Project34CLI.Project34WebService.HelloWorldRequestBody Body) {
+        public AboutRequest(Project34CLI.Project34WebService.AboutRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -134,9 +134,9 @@ namespace Project34CLI.Project34WebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute()]
-    public partial class HelloWorldRequestBody {
+    public partial class AboutRequestBody {
         
-        public HelloWorldRequestBody() {
+        public AboutRequestBody() {
         }
     }
     
@@ -144,15 +144,15 @@ namespace Project34CLI.Project34WebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class HelloWorldResponse {
+    public partial class AboutResponse {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="HelloWorldResponse", Namespace="http://tempuri.org/", Order=0)]
-        public Project34CLI.Project34WebService.HelloWorldResponseBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="AboutResponse", Namespace="http://tempuri.org/", Order=0)]
+        public Project34CLI.Project34WebService.AboutResponseBody Body;
         
-        public HelloWorldResponse() {
+        public AboutResponse() {
         }
         
-        public HelloWorldResponse(Project34CLI.Project34WebService.HelloWorldResponseBody Body) {
+        public AboutResponse(Project34CLI.Project34WebService.AboutResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -161,16 +161,16 @@ namespace Project34CLI.Project34WebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class HelloWorldResponseBody {
+    public partial class AboutResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string HelloWorldResult;
+        public string AboutResult;
         
-        public HelloWorldResponseBody() {
+        public AboutResponseBody() {
         }
         
-        public HelloWorldResponseBody(string HelloWorldResult) {
-            this.HelloWorldResult = HelloWorldResult;
+        public AboutResponseBody(string AboutResult) {
+            this.AboutResult = AboutResult;
         }
     }
     
@@ -399,26 +399,26 @@ namespace Project34CLI.Project34WebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Project34CLI.Project34WebService.HelloWorldResponse Project34CLI.Project34WebService.Project34WebServiceSoap.HelloWorld(Project34CLI.Project34WebService.HelloWorldRequest request) {
-            return base.Channel.HelloWorld(request);
+        Project34CLI.Project34WebService.AboutResponse Project34CLI.Project34WebService.Project34WebServiceSoap.About(Project34CLI.Project34WebService.AboutRequest request) {
+            return base.Channel.About(request);
         }
         
-        public string HelloWorld() {
-            Project34CLI.Project34WebService.HelloWorldRequest inValue = new Project34CLI.Project34WebService.HelloWorldRequest();
-            inValue.Body = new Project34CLI.Project34WebService.HelloWorldRequestBody();
-            Project34CLI.Project34WebService.HelloWorldResponse retVal = ((Project34CLI.Project34WebService.Project34WebServiceSoap)(this)).HelloWorld(inValue);
-            return retVal.Body.HelloWorldResult;
+        public string About() {
+            Project34CLI.Project34WebService.AboutRequest inValue = new Project34CLI.Project34WebService.AboutRequest();
+            inValue.Body = new Project34CLI.Project34WebService.AboutRequestBody();
+            Project34CLI.Project34WebService.AboutResponse retVal = ((Project34CLI.Project34WebService.Project34WebServiceSoap)(this)).About(inValue);
+            return retVal.Body.AboutResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Project34CLI.Project34WebService.HelloWorldResponse> Project34CLI.Project34WebService.Project34WebServiceSoap.HelloWorldAsync(Project34CLI.Project34WebService.HelloWorldRequest request) {
-            return base.Channel.HelloWorldAsync(request);
+        System.Threading.Tasks.Task<Project34CLI.Project34WebService.AboutResponse> Project34CLI.Project34WebService.Project34WebServiceSoap.AboutAsync(Project34CLI.Project34WebService.AboutRequest request) {
+            return base.Channel.AboutAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Project34CLI.Project34WebService.HelloWorldResponse> HelloWorldAsync() {
-            Project34CLI.Project34WebService.HelloWorldRequest inValue = new Project34CLI.Project34WebService.HelloWorldRequest();
-            inValue.Body = new Project34CLI.Project34WebService.HelloWorldRequestBody();
-            return ((Project34CLI.Project34WebService.Project34WebServiceSoap)(this)).HelloWorldAsync(inValue);
+        public System.Threading.Tasks.Task<Project34CLI.Project34WebService.AboutResponse> AboutAsync() {
+            Project34CLI.Project34WebService.AboutRequest inValue = new Project34CLI.Project34WebService.AboutRequest();
+            inValue.Body = new Project34CLI.Project34WebService.AboutRequestBody();
+            return ((Project34CLI.Project34WebService.Project34WebServiceSoap)(this)).AboutAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]

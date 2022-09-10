@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="Ko2mWBNkqIL8ZJkSsfa9i1cMD45K5yTArh8PDsroyRM=">
+<SavedWcfConfigurationInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="9.1" CheckSum="n9tcklhEXO8+EgGXqBgP/ULALEohVUtPmo3UdZ0xId8=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="Project34WebServiceSoap">
       <properties>
