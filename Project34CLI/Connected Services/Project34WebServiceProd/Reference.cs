@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Project34CLI.Project34WebService {
+namespace Project34CLI.Project34WebServiceProd {
     using System.Runtime.Serialization;
     using System;
     
@@ -75,22 +75,22 @@ namespace Project34CLI.Project34WebService {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="Project34WebService.Project34WebServiceSoap")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="Project34WebServiceProd.Project34WebServiceSoap")]
     public interface Project34WebServiceSoap {
         
         // CODEGEN: Generating message contract since element name AboutResult from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/About", ReplyAction="*")]
-        Project34CLI.Project34WebService.AboutResponse About(Project34CLI.Project34WebService.AboutRequest request);
+        Project34CLI.Project34WebServiceProd.AboutResponse About(Project34CLI.Project34WebServiceProd.AboutRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/About", ReplyAction="*")]
-        System.Threading.Tasks.Task<Project34CLI.Project34WebService.AboutResponse> AboutAsync(Project34CLI.Project34WebService.AboutRequest request);
+        System.Threading.Tasks.Task<Project34CLI.Project34WebServiceProd.AboutResponse> AboutAsync(Project34CLI.Project34WebServiceProd.AboutRequest request);
         
         // CODEGEN: Generating message contract since element name name from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Greeting", ReplyAction="*")]
-        Project34CLI.Project34WebService.GreetingResponse Greeting(Project34CLI.Project34WebService.GreetingRequest request);
+        Project34CLI.Project34WebServiceProd.GreetingResponse Greeting(Project34CLI.Project34WebServiceProd.GreetingRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Greeting", ReplyAction="*")]
-        System.Threading.Tasks.Task<Project34CLI.Project34WebService.GreetingResponse> GreetingAsync(Project34CLI.Project34WebService.GreetingRequest request);
+        System.Threading.Tasks.Task<Project34CLI.Project34WebServiceProd.GreetingResponse> GreetingAsync(Project34CLI.Project34WebServiceProd.GreetingRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Add", ReplyAction="*")]
         int Add(int a, int b);
@@ -100,17 +100,17 @@ namespace Project34CLI.Project34WebService {
         
         // CODEGEN: Generating message contract since element name user from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GreetUser", ReplyAction="*")]
-        Project34CLI.Project34WebService.GreetUserResponse GreetUser(Project34CLI.Project34WebService.GreetUserRequest request);
+        Project34CLI.Project34WebServiceProd.GreetUserResponse GreetUser(Project34CLI.Project34WebServiceProd.GreetUserRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GreetUser", ReplyAction="*")]
-        System.Threading.Tasks.Task<Project34CLI.Project34WebService.GreetUserResponse> GreetUserAsync(Project34CLI.Project34WebService.GreetUserRequest request);
+        System.Threading.Tasks.Task<Project34CLI.Project34WebServiceProd.GreetUserResponse> GreetUserAsync(Project34CLI.Project34WebServiceProd.GreetUserRequest request);
         
         // CODEGEN: Generating message contract since element name GetUsersResult from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetUsers", ReplyAction="*")]
-        Project34CLI.Project34WebService.GetUsersResponse GetUsers(Project34CLI.Project34WebService.GetUsersRequest request);
+        Project34CLI.Project34WebServiceProd.GetUsersResponse GetUsers(Project34CLI.Project34WebServiceProd.GetUsersRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetUsers", ReplyAction="*")]
-        System.Threading.Tasks.Task<Project34CLI.Project34WebService.GetUsersResponse> GetUsersAsync(Project34CLI.Project34WebService.GetUsersRequest request);
+        System.Threading.Tasks.Task<Project34CLI.Project34WebServiceProd.GetUsersResponse> GetUsersAsync(Project34CLI.Project34WebServiceProd.GetUsersRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -120,12 +120,12 @@ namespace Project34CLI.Project34WebService {
     public partial class AboutRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="About", Namespace="http://tempuri.org/", Order=0)]
-        public Project34CLI.Project34WebService.AboutRequestBody Body;
+        public Project34CLI.Project34WebServiceProd.AboutRequestBody Body;
         
         public AboutRequest() {
         }
         
-        public AboutRequest(Project34CLI.Project34WebService.AboutRequestBody Body) {
+        public AboutRequest(Project34CLI.Project34WebServiceProd.AboutRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -147,12 +147,12 @@ namespace Project34CLI.Project34WebService {
     public partial class AboutResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="AboutResponse", Namespace="http://tempuri.org/", Order=0)]
-        public Project34CLI.Project34WebService.AboutResponseBody Body;
+        public Project34CLI.Project34WebServiceProd.AboutResponseBody Body;
         
         public AboutResponse() {
         }
         
-        public AboutResponse(Project34CLI.Project34WebService.AboutResponseBody Body) {
+        public AboutResponse(Project34CLI.Project34WebServiceProd.AboutResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -181,12 +181,12 @@ namespace Project34CLI.Project34WebService {
     public partial class GreetingRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="Greeting", Namespace="http://tempuri.org/", Order=0)]
-        public Project34CLI.Project34WebService.GreetingRequestBody Body;
+        public Project34CLI.Project34WebServiceProd.GreetingRequestBody Body;
         
         public GreetingRequest() {
         }
         
-        public GreetingRequest(Project34CLI.Project34WebService.GreetingRequestBody Body) {
+        public GreetingRequest(Project34CLI.Project34WebServiceProd.GreetingRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -215,12 +215,12 @@ namespace Project34CLI.Project34WebService {
     public partial class GreetingResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GreetingResponse", Namespace="http://tempuri.org/", Order=0)]
-        public Project34CLI.Project34WebService.GreetingResponseBody Body;
+        public Project34CLI.Project34WebServiceProd.GreetingResponseBody Body;
         
         public GreetingResponse() {
         }
         
-        public GreetingResponse(Project34CLI.Project34WebService.GreetingResponseBody Body) {
+        public GreetingResponse(Project34CLI.Project34WebServiceProd.GreetingResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -249,12 +249,12 @@ namespace Project34CLI.Project34WebService {
     public partial class GreetUserRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GreetUser", Namespace="http://tempuri.org/", Order=0)]
-        public Project34CLI.Project34WebService.GreetUserRequestBody Body;
+        public Project34CLI.Project34WebServiceProd.GreetUserRequestBody Body;
         
         public GreetUserRequest() {
         }
         
-        public GreetUserRequest(Project34CLI.Project34WebService.GreetUserRequestBody Body) {
+        public GreetUserRequest(Project34CLI.Project34WebServiceProd.GreetUserRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -266,12 +266,12 @@ namespace Project34CLI.Project34WebService {
     public partial class GreetUserRequestBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public Project34CLI.Project34WebService.User user;
+        public Project34CLI.Project34WebServiceProd.User user;
         
         public GreetUserRequestBody() {
         }
         
-        public GreetUserRequestBody(Project34CLI.Project34WebService.User user) {
+        public GreetUserRequestBody(Project34CLI.Project34WebServiceProd.User user) {
             this.user = user;
         }
     }
@@ -283,12 +283,12 @@ namespace Project34CLI.Project34WebService {
     public partial class GreetUserResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GreetUserResponse", Namespace="http://tempuri.org/", Order=0)]
-        public Project34CLI.Project34WebService.GreetUserResponseBody Body;
+        public Project34CLI.Project34WebServiceProd.GreetUserResponseBody Body;
         
         public GreetUserResponse() {
         }
         
-        public GreetUserResponse(Project34CLI.Project34WebService.GreetUserResponseBody Body) {
+        public GreetUserResponse(Project34CLI.Project34WebServiceProd.GreetUserResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -317,12 +317,12 @@ namespace Project34CLI.Project34WebService {
     public partial class GetUsersRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetUsers", Namespace="http://tempuri.org/", Order=0)]
-        public Project34CLI.Project34WebService.GetUsersRequestBody Body;
+        public Project34CLI.Project34WebServiceProd.GetUsersRequestBody Body;
         
         public GetUsersRequest() {
         }
         
-        public GetUsersRequest(Project34CLI.Project34WebService.GetUsersRequestBody Body) {
+        public GetUsersRequest(Project34CLI.Project34WebServiceProd.GetUsersRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -344,12 +344,12 @@ namespace Project34CLI.Project34WebService {
     public partial class GetUsersResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetUsersResponse", Namespace="http://tempuri.org/", Order=0)]
-        public Project34CLI.Project34WebService.GetUsersResponseBody Body;
+        public Project34CLI.Project34WebServiceProd.GetUsersResponseBody Body;
         
         public GetUsersResponse() {
         }
         
-        public GetUsersResponse(Project34CLI.Project34WebService.GetUsersResponseBody Body) {
+        public GetUsersResponse(Project34CLI.Project34WebServiceProd.GetUsersResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -361,23 +361,23 @@ namespace Project34CLI.Project34WebService {
     public partial class GetUsersResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public Project34CLI.Project34WebService.User[] GetUsersResult;
+        public Project34CLI.Project34WebServiceProd.User[] GetUsersResult;
         
         public GetUsersResponseBody() {
         }
         
-        public GetUsersResponseBody(Project34CLI.Project34WebService.User[] GetUsersResult) {
+        public GetUsersResponseBody(Project34CLI.Project34WebServiceProd.User[] GetUsersResult) {
             this.GetUsersResult = GetUsersResult;
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface Project34WebServiceSoapChannel : Project34CLI.Project34WebService.Project34WebServiceSoap, System.ServiceModel.IClientChannel {
+    public interface Project34WebServiceSoapChannel : Project34CLI.Project34WebServiceProd.Project34WebServiceSoap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class Project34WebServiceSoapClient : System.ServiceModel.ClientBase<Project34CLI.Project34WebService.Project34WebServiceSoap>, Project34CLI.Project34WebService.Project34WebServiceSoap {
+    public partial class Project34WebServiceSoapClient : System.ServiceModel.ClientBase<Project34CLI.Project34WebServiceProd.Project34WebServiceSoap>, Project34CLI.Project34WebServiceProd.Project34WebServiceSoap {
         
         public Project34WebServiceSoapClient() {
         }
@@ -399,51 +399,51 @@ namespace Project34CLI.Project34WebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Project34CLI.Project34WebService.AboutResponse Project34CLI.Project34WebService.Project34WebServiceSoap.About(Project34CLI.Project34WebService.AboutRequest request) {
+        Project34CLI.Project34WebServiceProd.AboutResponse Project34CLI.Project34WebServiceProd.Project34WebServiceSoap.About(Project34CLI.Project34WebServiceProd.AboutRequest request) {
             return base.Channel.About(request);
         }
         
         public string About() {
-            Project34CLI.Project34WebService.AboutRequest inValue = new Project34CLI.Project34WebService.AboutRequest();
-            inValue.Body = new Project34CLI.Project34WebService.AboutRequestBody();
-            Project34CLI.Project34WebService.AboutResponse retVal = ((Project34CLI.Project34WebService.Project34WebServiceSoap)(this)).About(inValue);
+            Project34CLI.Project34WebServiceProd.AboutRequest inValue = new Project34CLI.Project34WebServiceProd.AboutRequest();
+            inValue.Body = new Project34CLI.Project34WebServiceProd.AboutRequestBody();
+            Project34CLI.Project34WebServiceProd.AboutResponse retVal = ((Project34CLI.Project34WebServiceProd.Project34WebServiceSoap)(this)).About(inValue);
             return retVal.Body.AboutResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Project34CLI.Project34WebService.AboutResponse> Project34CLI.Project34WebService.Project34WebServiceSoap.AboutAsync(Project34CLI.Project34WebService.AboutRequest request) {
+        System.Threading.Tasks.Task<Project34CLI.Project34WebServiceProd.AboutResponse> Project34CLI.Project34WebServiceProd.Project34WebServiceSoap.AboutAsync(Project34CLI.Project34WebServiceProd.AboutRequest request) {
             return base.Channel.AboutAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Project34CLI.Project34WebService.AboutResponse> AboutAsync() {
-            Project34CLI.Project34WebService.AboutRequest inValue = new Project34CLI.Project34WebService.AboutRequest();
-            inValue.Body = new Project34CLI.Project34WebService.AboutRequestBody();
-            return ((Project34CLI.Project34WebService.Project34WebServiceSoap)(this)).AboutAsync(inValue);
+        public System.Threading.Tasks.Task<Project34CLI.Project34WebServiceProd.AboutResponse> AboutAsync() {
+            Project34CLI.Project34WebServiceProd.AboutRequest inValue = new Project34CLI.Project34WebServiceProd.AboutRequest();
+            inValue.Body = new Project34CLI.Project34WebServiceProd.AboutRequestBody();
+            return ((Project34CLI.Project34WebServiceProd.Project34WebServiceSoap)(this)).AboutAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Project34CLI.Project34WebService.GreetingResponse Project34CLI.Project34WebService.Project34WebServiceSoap.Greeting(Project34CLI.Project34WebService.GreetingRequest request) {
+        Project34CLI.Project34WebServiceProd.GreetingResponse Project34CLI.Project34WebServiceProd.Project34WebServiceSoap.Greeting(Project34CLI.Project34WebServiceProd.GreetingRequest request) {
             return base.Channel.Greeting(request);
         }
         
         public string Greeting(string name) {
-            Project34CLI.Project34WebService.GreetingRequest inValue = new Project34CLI.Project34WebService.GreetingRequest();
-            inValue.Body = new Project34CLI.Project34WebService.GreetingRequestBody();
+            Project34CLI.Project34WebServiceProd.GreetingRequest inValue = new Project34CLI.Project34WebServiceProd.GreetingRequest();
+            inValue.Body = new Project34CLI.Project34WebServiceProd.GreetingRequestBody();
             inValue.Body.name = name;
-            Project34CLI.Project34WebService.GreetingResponse retVal = ((Project34CLI.Project34WebService.Project34WebServiceSoap)(this)).Greeting(inValue);
+            Project34CLI.Project34WebServiceProd.GreetingResponse retVal = ((Project34CLI.Project34WebServiceProd.Project34WebServiceSoap)(this)).Greeting(inValue);
             return retVal.Body.GreetingResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Project34CLI.Project34WebService.GreetingResponse> Project34CLI.Project34WebService.Project34WebServiceSoap.GreetingAsync(Project34CLI.Project34WebService.GreetingRequest request) {
+        System.Threading.Tasks.Task<Project34CLI.Project34WebServiceProd.GreetingResponse> Project34CLI.Project34WebServiceProd.Project34WebServiceSoap.GreetingAsync(Project34CLI.Project34WebServiceProd.GreetingRequest request) {
             return base.Channel.GreetingAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Project34CLI.Project34WebService.GreetingResponse> GreetingAsync(string name) {
-            Project34CLI.Project34WebService.GreetingRequest inValue = new Project34CLI.Project34WebService.GreetingRequest();
-            inValue.Body = new Project34CLI.Project34WebService.GreetingRequestBody();
+        public System.Threading.Tasks.Task<Project34CLI.Project34WebServiceProd.GreetingResponse> GreetingAsync(string name) {
+            Project34CLI.Project34WebServiceProd.GreetingRequest inValue = new Project34CLI.Project34WebServiceProd.GreetingRequest();
+            inValue.Body = new Project34CLI.Project34WebServiceProd.GreetingRequestBody();
             inValue.Body.name = name;
-            return ((Project34CLI.Project34WebService.Project34WebServiceSoap)(this)).GreetingAsync(inValue);
+            return ((Project34CLI.Project34WebServiceProd.Project34WebServiceSoap)(this)).GreetingAsync(inValue);
         }
         
         public int Add(int a, int b) {
@@ -455,51 +455,51 @@ namespace Project34CLI.Project34WebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Project34CLI.Project34WebService.GreetUserResponse Project34CLI.Project34WebService.Project34WebServiceSoap.GreetUser(Project34CLI.Project34WebService.GreetUserRequest request) {
+        Project34CLI.Project34WebServiceProd.GreetUserResponse Project34CLI.Project34WebServiceProd.Project34WebServiceSoap.GreetUser(Project34CLI.Project34WebServiceProd.GreetUserRequest request) {
             return base.Channel.GreetUser(request);
         }
         
-        public string GreetUser(Project34CLI.Project34WebService.User user) {
-            Project34CLI.Project34WebService.GreetUserRequest inValue = new Project34CLI.Project34WebService.GreetUserRequest();
-            inValue.Body = new Project34CLI.Project34WebService.GreetUserRequestBody();
+        public string GreetUser(Project34CLI.Project34WebServiceProd.User user) {
+            Project34CLI.Project34WebServiceProd.GreetUserRequest inValue = new Project34CLI.Project34WebServiceProd.GreetUserRequest();
+            inValue.Body = new Project34CLI.Project34WebServiceProd.GreetUserRequestBody();
             inValue.Body.user = user;
-            Project34CLI.Project34WebService.GreetUserResponse retVal = ((Project34CLI.Project34WebService.Project34WebServiceSoap)(this)).GreetUser(inValue);
+            Project34CLI.Project34WebServiceProd.GreetUserResponse retVal = ((Project34CLI.Project34WebServiceProd.Project34WebServiceSoap)(this)).GreetUser(inValue);
             return retVal.Body.GreetUserResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Project34CLI.Project34WebService.GreetUserResponse> Project34CLI.Project34WebService.Project34WebServiceSoap.GreetUserAsync(Project34CLI.Project34WebService.GreetUserRequest request) {
+        System.Threading.Tasks.Task<Project34CLI.Project34WebServiceProd.GreetUserResponse> Project34CLI.Project34WebServiceProd.Project34WebServiceSoap.GreetUserAsync(Project34CLI.Project34WebServiceProd.GreetUserRequest request) {
             return base.Channel.GreetUserAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Project34CLI.Project34WebService.GreetUserResponse> GreetUserAsync(Project34CLI.Project34WebService.User user) {
-            Project34CLI.Project34WebService.GreetUserRequest inValue = new Project34CLI.Project34WebService.GreetUserRequest();
-            inValue.Body = new Project34CLI.Project34WebService.GreetUserRequestBody();
+        public System.Threading.Tasks.Task<Project34CLI.Project34WebServiceProd.GreetUserResponse> GreetUserAsync(Project34CLI.Project34WebServiceProd.User user) {
+            Project34CLI.Project34WebServiceProd.GreetUserRequest inValue = new Project34CLI.Project34WebServiceProd.GreetUserRequest();
+            inValue.Body = new Project34CLI.Project34WebServiceProd.GreetUserRequestBody();
             inValue.Body.user = user;
-            return ((Project34CLI.Project34WebService.Project34WebServiceSoap)(this)).GreetUserAsync(inValue);
+            return ((Project34CLI.Project34WebServiceProd.Project34WebServiceSoap)(this)).GreetUserAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Project34CLI.Project34WebService.GetUsersResponse Project34CLI.Project34WebService.Project34WebServiceSoap.GetUsers(Project34CLI.Project34WebService.GetUsersRequest request) {
+        Project34CLI.Project34WebServiceProd.GetUsersResponse Project34CLI.Project34WebServiceProd.Project34WebServiceSoap.GetUsers(Project34CLI.Project34WebServiceProd.GetUsersRequest request) {
             return base.Channel.GetUsers(request);
         }
         
-        public Project34CLI.Project34WebService.User[] GetUsers() {
-            Project34CLI.Project34WebService.GetUsersRequest inValue = new Project34CLI.Project34WebService.GetUsersRequest();
-            inValue.Body = new Project34CLI.Project34WebService.GetUsersRequestBody();
-            Project34CLI.Project34WebService.GetUsersResponse retVal = ((Project34CLI.Project34WebService.Project34WebServiceSoap)(this)).GetUsers(inValue);
+        public Project34CLI.Project34WebServiceProd.User[] GetUsers() {
+            Project34CLI.Project34WebServiceProd.GetUsersRequest inValue = new Project34CLI.Project34WebServiceProd.GetUsersRequest();
+            inValue.Body = new Project34CLI.Project34WebServiceProd.GetUsersRequestBody();
+            Project34CLI.Project34WebServiceProd.GetUsersResponse retVal = ((Project34CLI.Project34WebServiceProd.Project34WebServiceSoap)(this)).GetUsers(inValue);
             return retVal.Body.GetUsersResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Project34CLI.Project34WebService.GetUsersResponse> Project34CLI.Project34WebService.Project34WebServiceSoap.GetUsersAsync(Project34CLI.Project34WebService.GetUsersRequest request) {
+        System.Threading.Tasks.Task<Project34CLI.Project34WebServiceProd.GetUsersResponse> Project34CLI.Project34WebServiceProd.Project34WebServiceSoap.GetUsersAsync(Project34CLI.Project34WebServiceProd.GetUsersRequest request) {
             return base.Channel.GetUsersAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Project34CLI.Project34WebService.GetUsersResponse> GetUsersAsync() {
-            Project34CLI.Project34WebService.GetUsersRequest inValue = new Project34CLI.Project34WebService.GetUsersRequest();
-            inValue.Body = new Project34CLI.Project34WebService.GetUsersRequestBody();
-            return ((Project34CLI.Project34WebService.Project34WebServiceSoap)(this)).GetUsersAsync(inValue);
+        public System.Threading.Tasks.Task<Project34CLI.Project34WebServiceProd.GetUsersResponse> GetUsersAsync() {
+            Project34CLI.Project34WebServiceProd.GetUsersRequest inValue = new Project34CLI.Project34WebServiceProd.GetUsersRequest();
+            inValue.Body = new Project34CLI.Project34WebServiceProd.GetUsersRequestBody();
+            return ((Project34CLI.Project34WebServiceProd.Project34WebServiceSoap)(this)).GetUsersAsync(inValue);
         }
     }
 }
