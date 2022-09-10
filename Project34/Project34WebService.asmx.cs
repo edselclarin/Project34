@@ -18,9 +18,15 @@ namespace Project34
     {
 
         [WebMethod]
-        public string HelloWorld()
+        public string About()
         {
-            return "Hello World";
+            string version = "1.0.0.0";
+#if DEBUG
+            string build = "DEBUG";
+#else
+            string build = "RELEASE";
+#endif
+            return $"{this.GetType().Name} {version} {build}";
         }
 
         [WebMethod]
