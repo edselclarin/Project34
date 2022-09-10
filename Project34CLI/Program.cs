@@ -1,9 +1,5 @@
-﻿using Project34CLI.Project34WebService;
+﻿using Project34CLI.Factories;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Project34CLI
 {
@@ -11,7 +7,7 @@ namespace Project34CLI
     {
         static void Main(string[] args)
         {
-            var client = new Project34WebServiceSoapClient("Project34WebServiceSoap");
+            var client = WebServiceClientFactory.CreateClient();
 
             Console.WriteLine("--- About() ---");
             string rsp = client.About();
@@ -31,19 +27,18 @@ namespace Project34CLI
             Console.WriteLine();
 
             Console.WriteLine("--- GreetUser() ---");
-            rsp = client.GreetUser(new User
-            {
-                FirstName = "Johnny",
-                LastName = "Carson"
-            });
+            var user = WebServiceModelFactory.CreateUser();
+            user.FirstName = "Johnny";
+            user.LastName = "Carson";
+            rsp = client.GreetUser(user);
             Console.WriteLine(rsp);
             Console.WriteLine();
 
             Console.WriteLine("--- GetUsers() ---");
             var users = client.GetUsers();
-            foreach (var user in users)
+            foreach (var usr in users)
             {
-                Console.WriteLine($"User: {user.FirstName} {user.LastName}");
+                Console.WriteLine($"User: {usr.FirstName} {usr.LastName}");
             }
             Console.WriteLine();
 

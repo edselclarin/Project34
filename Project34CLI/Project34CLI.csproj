@@ -45,50 +45,89 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\Project34WebService\Reference.cs">
+    <Compile Include="Connected Services\Project34WebServiceDev\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\Project34WebServiceProd\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Factories\WebServiceModelFactory.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Factories\WebServiceClientFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Connected Services\Project34WebService\Project34CLI.Project34WebService.AboutResponse.datasource">
+    <None Include="Connected Services\Project34WebServiceDev\Project34CLI.Project34WebServiceDev.AboutResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\Project34WebService\Project34CLI.Project34WebService.GetUsersResponse.datasource">
+    <None Include="Connected Services\Project34WebServiceDev\Project34CLI.Project34WebServiceDev.GetUsersResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\Project34WebService\Project34CLI.Project34WebService.GreetingResponse.datasource">
+    <None Include="Connected Services\Project34WebServiceDev\Project34CLI.Project34WebServiceDev.GreetingResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\Project34WebService\Project34CLI.Project34WebService.GreetUserResponse.datasource">
+    <None Include="Connected Services\Project34WebServiceDev\Project34CLI.Project34WebServiceDev.GreetUserResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\Project34WebService\Project34CLI.Project34WebService.User.datasource">
+    <None Include="Connected Services\Project34WebServiceDev\Project34CLI.Project34WebServiceDev.User.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\Project34WebService\Project34WebService.wsdl" />
+    <None Include="Connected Services\Project34WebServiceDev\Project34WebService.wsdl" />
+    <None Include="Connected Services\Project34WebServiceProd\Project34CLI.Project34WebServiceProd.AboutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Project34WebServiceProd\Project34CLI.Project34WebServiceProd.GetUsersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Project34WebServiceProd\Project34CLI.Project34WebServiceProd.GreetingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Project34WebServiceProd\Project34CLI.Project34WebServiceProd.GreetUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Project34WebServiceProd\Project34CLI.Project34WebServiceProd.User.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Project34WebServiceProd\Project34WebService.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\Project34WebService\" />
+    <WCFMetadataStorage Include="Connected Services\Project34WebServiceDev\" />
+    <WCFMetadataStorage Include="Connected Services\Project34WebServiceProd\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\Project34WebService\Project34WebService.disco" />
+    <None Include="Connected Services\Project34WebServiceDev\Project34WebService.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\Project34WebService\configuration91.svcinfo" />
+    <None Include="Connected Services\Project34WebServiceDev\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\Project34WebService\configuration.svcinfo" />
+    <None Include="Connected Services\Project34WebServiceDev\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\Project34WebService\Reference.svcmap">
+    <None Include="Connected Services\Project34WebServiceDev\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\Project34WebServiceProd\Project34WebService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\Project34WebServiceProd\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\Project34WebServiceProd\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\Project34WebServiceProd\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
